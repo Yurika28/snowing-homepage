@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(./asset/4217346.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Poppins", serif;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    height: 60px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgb(210, 210, 210, .7);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.icon{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon span{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -8px;
+}
+
+.icon img{
+    width: 25px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    height: 50px;
+    width: 50%;
+}
+
+nav a{ 
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: black;
+}
+
+nav a:hover{
+    color: darkcyan;
+}
+
+.logo{
+    display: flex;
+    width: 120px;
+    gap: 20px;
+}
+
+.logo i{
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: darkgreen;
+}
+
+.santa img{
+    position: absolute;
+    width: auto;
+    height: 80px;
+    top: 30%;
+    left: 30%;
+    transform: rotate(-15deg);
+}
+
+.snowflake{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(./asset/snowflake.png);
+    background-size: cover;
+    animation: snowfall 3s ease-in-out infinite;
+}
+
+@keyframes snowfall{
+    0%{
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(150px, 50vh);
+    }
+}
